@@ -27,6 +27,14 @@ services:
         aliases:
           - nextcloud
 
+  onlyoffice:
+    image: onlyoffice/documentserver
+    restart: always
+    networks:
+      main:
+        aliases:
+          - onlyoffice
+
 volumes:
   nextcloud:
   db:
